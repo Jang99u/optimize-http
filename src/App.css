@@ -1,0 +1,102 @@
+/* App.css */
+
+/* 전체 페이지 스타일 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* 컨테이너 */
+.app-container {
+  max-width: 800px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 타이틀 */
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* 폼 그룹 공통 */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* 입력 관련 요소들 */
+.input,
+.textarea,
+.select {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* 버튼 */
+.button {
+  cursor: pointer;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  font-size: 14px;
+}
+.button:hover {
+  background: #0056b3;
+}
+.button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+/* 가로 배치(줄바꿈 가능) */
+.flex-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap; /* 화면이 좁을 때 자동 줄바꿈 */
+  margin-bottom: 16px;
+}
+
+/* 응답 섹션 */
+.response-section {
+  margin-top: 24px;
+}
+
+.response-status {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.response-body {
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 12px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  font-size: 14px;
+  min-height: 80px; /* 기본 높이 */
+}
